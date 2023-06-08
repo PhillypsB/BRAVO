@@ -1,24 +1,18 @@
-const h1 = document.querySelector('h1');
-const form = document.querySelector('#form'); 
-const input1 = document.querySelector('#calculo1');
-const input2 = document.querySelector('#calculo2');
-const btn = document.querySelector('#btnCalcular');
-const pResult = document.querySelector('#result');
+function _class(name){
+  return document.getElementsByClassName(name);
+}
 
-// form.addEventListener('submit', sumarInputValues)
+let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
 
-// function sumarInputValues(event) {
-//   // console.log({event});
-//   event.preventDefault();
-//   const sumaInputs = input1.value + input2.value;
-//   pResult.innerText = "Resultado: " + sumaInputs;
-// }
-
-btn.addEventListener('click', sumarInputValues)
-
-function sumarInputValues(event) {
-  // console.log({event});
-  // event.preventDefault();
-  const sumaInputs = +input1.value + +input2.value;
-  pResult.innerText = "Resultado: " + sumaInputs;
+for(let i=0;i<tabPanes.length;i++){
+  tabPanes[i].addEventListener("click",function(){
+    _class("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+    tabPanes[i].classList.add("active");
+    
+    _class("tab-indicator")[0].style.top = `calc(80px + ${i*50}px)`;
+    
+    _class("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+    _class("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
+    
+  });
 }

@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manipulación del DOM básica - Curso Práctico de JavaScript</title>
+  <meta charset="UTF-8">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Manipulación del DOM básica</h1>
-<form id="form">
-<input id="calculo1" placeholder="Escribe algo aquí" />
-<input id="calculo2" placeholder="Escribe algo aquí" />
-<button type="button" id="btnCalcular">Calcular</button>
-<p id="result"></p>
-</form>
-<script src="./script.js"></script>
+  <div class="tabs">
+    <div class="tab-header">
+      <div class="active">
+        <i class="fa fa-code"></i> Code
+      </div>
+      <div>
+        <i class="fa fa-pencil-square"></i> About
+      </div>
+      <div>
+        <i class="fa fa-bar-chart"></i> Services
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i> Contact
+      </div>
+    </div>
+    <div class="tab-indicator"></div>
+    <div class="tab-content">
+  
+      <div class="active">
+        <i class="fa fa-code"></i>
+        <h2>This is code section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+      </div>
+  
+      <div>
+        <i class="fa fa-pencil-square"></i>
+        <h2>This is about section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+      </div>
+  
+      <div>
+        <i class="fa fa-bar-chart"></i>
+        <h2>This is services section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+      </div>
+  
+      <div>
+        <i class="fa fa-envelope"></i>
+        <h2>This is contact section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+      </div>
+  
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
