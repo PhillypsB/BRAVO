@@ -9,6 +9,7 @@ body {
   box-shadow: 5px 5px 10px 5px #ccc;
   overflow: hidden;
   margin: auto;
+  border-radius: 25px;
 }
 
 .tabs .tab-header {
