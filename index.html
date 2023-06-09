@@ -3,87 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>BRAVO-UGME</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Archivo CSS personalizado -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
 </head>
 <body>
-  <div class="tabs">
-    <div class="tab-header">
-      <div class="active">
-        <i class="fa fa-code"></i> SEGUIMIENTO
+  <div class="container">
+    <div style="display: flex; justify-content: flex-end"><button onclick="toggleDarkMode()">Cambiar modo</button> <!-- Botón para cambiar el modo claro/oscuro --></div>
+    
+    <div class="tabs">
+      <div class="tab-header">
+        
+        <div class="active">
+          <i class="fas fa-code"></i> SEGUIMIENTO
+        </div>
+        <div>
+          <i class="fas fa-pencil-square"></i> SISME
+        </div>
+        <div>
+          <i class="fas fa-bar-chart"></i> MODULARES
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i> MOBILIARIO
+        </div>
       </div>
-      <div>
-        <i class="fa fa-pencil-square"></i> SISME
-      </div>
-      <div>
-        <i class="fa fa-bar-chart"></i> MODULARES
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i> MOBILIARIO
-      </div>
-    </div>
-    <div class="tab-indicator"></div>
-    <div class="tab-content">
+      <div class="tab-indicator"></div>
+      <div class="tab-content">
 
-      <div class="active">
-        <i class="fa fa-code"></i>
-        <h2>Avances:</h2>
-        <table class="PHI-table">
-          <tr>
-            <th>DU</th>
-            <td></td>
-            <td>274<br><a href="https://lookerstudio.google.com/reporting/1ea254b7-1a99-4ca5-8131-a21314dd2651/page/yMwPD" target="_blank">INFOGRAFÍA</a></td>
-            <td><a href="https://lookerstudio.google.com/reporting/1ea254b7-1a99-4ca5-8131-a21314dd2651/page/yMwPD" target="_blank">DESCARGAR<br>EXCEL</a></td>
-          </tr>
-          <tr>
-            <th>ENCUESTA</th>
-            <td></td>
-            <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2PBXsosk1nN-DhW_DZsGGgjKiXBJh2agbDN458E53RZpsHg/viewform" target="_blank">REGISTRAR</a></td>
-            <td>759<br><a href="https://docs.google.com/spreadsheets/d/1BlNpQ08HKa3bqPP3JVtyOvoMCN1vWteJlN_ka8o7erY/edit?usp=sharing" target="_blank">RESULTADOS</a></td>
-          </tr>
-          <tr>
-            <th>DATOS</th>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>AM</th>
-            <td></td>
-            <td>(coordinando con OTI)</td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
+        <div class="active">
+          <i class="fas fa-code"></i>
+          <h2>Avances:</h2>
+          <table class="PHI-table">
+            <tr>
+              <th>Proyecto</th>
+              <th>Estado</th>
+            </tr>
+            <tr>
+              <td>Proyecto 1</td>
+              <td>En progreso</td>
+            </tr>
+            <tr>
+              <td>Proyecto 2</td>
+              <td>Completado</td>
+            </tr>
+          </table>
+        </div>
 
-      <div>
-        <i class="fa fa-pencil-square"></i>
-        <h2>This is about section</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
-      </div>
+        <div>
+          <i class="fas fa-pencil-square"></i>
+          <h2>This is about section</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+        </div>
 
-      <div>
-        <i class="fa fa-bar-chart"></i>
-        <h2>Avances:</h2>
-        <p>
-          <ul>
-            <li>DU --></li>
-            <li>Encuesta --><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2PBXsosk1nN-DhW_DZsGGgjKiXBJh2agbDN458E53RZpsHg/viewform" target="_blank">REGISTRAR</a> | <b>759</b> <a href="https://docs.google.com/spreadsheets/d/1BlNpQ08HKa3bqPP3JVtyOvoMCN1vWteJlN_ka8o7erY/edit?usp=sharing" target="_blank">RESULTADOS</a></li>
-            <li>DATOS --></li>
-            <li>AM -->(coordinando con OTI)</li>
-          </ul>
-        </p>
-      </div>
+        <div>
+          <i class="fas fa-bar-chart"></i>
+          <h2>Avances:</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed faucibus justo. Sed vehicula leo quis est ullamcorper hendrerit. Maecenas non ipsum vel dolor scelerisque tristique vel ac leo.
+          </p>
+        </div>
 
-      <div>
-        <i class="fa fa-envelope"></i>
-        <h2>This is contact section</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
-      </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <h2>This is contact section</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+        </div>
 
+      </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script> <!-- Archivo JavaScript personalizado -->
+  <script>
+    function toggleDarkMode() {
+      const body = document.querySelector('body');
+      const tabs = document.querySelector('.tabs');
+  
+      body.classList.toggle('dark-mode');
+      tabs.classList.toggle('dark-mode');
+    }
+  </script>
+
 </body>
 </html>
 
