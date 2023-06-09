@@ -133,7 +133,7 @@ body.dark-mode {
 
 /* Media queries para hacer el diseño responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   .tabs {
     flex-direction: column;
     height: auto;
