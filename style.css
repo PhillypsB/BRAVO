@@ -137,6 +137,7 @@ body.dark-mode {
 @media screen and (max-width: 6.4in) {
   body {
     font-family: Arial, sans-serif;
+    font-size: 130%;
   }
   
   .tabs {
@@ -250,4 +251,3 @@ body.dark-mode {
     color: #00acee;
   }
 }
-
