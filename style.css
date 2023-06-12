@@ -58,10 +58,12 @@ body {
   padding: 40px 20px;
   opacity: 0;
   transition: opacity 0.5s ease;
+  pointer-events: none; /* Deshabilita los eventos del mouse en el contenido oculto */
 }
 
 .tabs .tab-content > div.active {
   opacity: 1;
+  pointer-events: auto; /* Habilita los eventos del mouse en el contenido activo */
 }
 
 .tabs .tab-indicator {
@@ -75,7 +77,6 @@ body {
 }
 
 .PHI-table {
-  
   border-collapse: collapse;
   width: 100%;
 }
@@ -128,12 +129,7 @@ body.dark-mode {
   color: #00acee;
 }
 
-.tabs.dark-mode .tab-indicator {
-  background: #00acee;
-}
-
 /* Media queries para hacer el diseño responsive */
-
 @media screen and (max-width: 6.4in) {
   body {
     font-family: Arial, sans-serif;
@@ -197,6 +193,7 @@ body.dark-mode {
     padding: 20px;
     opacity: 1;
     transition: opacity 0.5s ease;
+    pointer-events: auto; /* Habilita los eventos del mouse en el contenido en dispositivos móviles */
   }
   
   .tabs .tab-content > div.active {
